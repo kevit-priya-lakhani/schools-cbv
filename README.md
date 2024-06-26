@@ -1,6 +1,4 @@
 
-ChatGPT
-Certainly! Below is a template for your README.md file for your Django CRUD application:
 
 Django CRUD Application for School Data
 This Django application provides basic CRUD (Create, Read, Update, Delete) operations for managing school data such as name, principal, and location.
