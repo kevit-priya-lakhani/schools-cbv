@@ -1,0 +1,24 @@
+{% extends "basic_app/basic_app_base.html" %}
+{% block body_block %} 
+<div class="jumbotron">
+    <h1>Welcome to School Detail Page</h1>
+    <h2>School Details:</h2>
+    <p>Name: {{school_detail.name}}</p>
+    <p>Principal: {{school_detail.principal}}</p>
+    <p>Location: {{school_detail.location}}</p>
+    <h3>Student Details:</h3>
+    <ol>
+        {% for student in school_detail.students.all%} <!-- related_name(in model) foreign key referenced-->
+        <li>{{student.name}} {{student.age}} </li>
+        {% endfor %}
+    </ol>
+    
+</div>
+
+<div class='container'>
+    <p> <a class='btn btn-warning' href="{% url 'basic_app:update' id=school_detail.pk %}">Update</a>
+   <a class='btn btn-danger' href="{% url 'basic_app:delete' id=school_detail.pk %}">Delete</a></p>
+
+</div>
+
+{% endblock body_block %}  
