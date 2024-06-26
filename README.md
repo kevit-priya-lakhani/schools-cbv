@@ -18,7 +18,7 @@ Clone the repository:
 bash
 Copy code
 git clone <repository_url>
-cd django-crud-school
+cd django-crud-school   
 Create a virtual environment:
 
 bash
