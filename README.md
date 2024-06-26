@@ -1,9 +1,7 @@
+## Django CRUD Application for School Data
+#### This Django application provides basic CRUD (Create, Read, Update, Delete) operations for managing school data such as name, principal, and location.
 
-
-Django CRUD Application for School Data
-This Django application provides basic CRUD (Create, Read, Update, Delete) operations for managing school data such as name, principal, and location.
-
-Features
+# Features
 Create: Add new schools with their details.
 Read: View a list of all schools and their details. View details of individual schools.
 Update: Modify the details of existing schools.
